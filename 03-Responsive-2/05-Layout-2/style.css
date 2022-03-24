@@ -1,27 +1,53 @@
 /* intuitivnejsi box-sizing */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
 
 body {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-header, footer, article, nav, aside {
-	padding: 20px;
+header,
+footer,
+article,
+nav,
+aside {
+  padding: 20px;
 }
 
-header > :first-child, footer > :first-child, article > :first-child, nav > :first-child, aside > :first-child {
-	margin-top: 0;
+header > :first-child,
+footer > :first-child,
+article > :first-child,
+nav > :first-child,
+aside > :first-child {
+  margin-top: 0;
 }
 
-header > :last-child, footer > :last-child, article > :last-child, nav > :last-child, aside > :last-child {
-	margin-bottom: 0;
+header > :last-child,
+footer > :last-child,
+article > :last-child,
+nav > :last-child,
+aside > :last-child {
+  margin-bottom: 0;
 }
 
-.hlavicka { background-color: #2ecc71; }
-.menu 		{ background-color: #e74c3c; }
-.obsah 		{ background-color: #f1c40f ; }
-.reklama 	{ background-color: #8e44ad; }
-.paticka 	{ background-color: dodgerblue; }
+.hlavicka {
+  background-color: #2ecc71;
+}
+.menu {
+  background-color: #e74c3c;
+}
+.obsah {
+  background-color: #f1c40f;
+}
+.reklama {
+  background-color: #8e44ad;
+}
+.paticka {
+  background-color: dodgerblue;
+}
 
 /* ---------------------------------------------------- */
 
@@ -33,19 +59,33 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 */
 
 @media screen and (min-width: 640px) {
-	.obsah{display: flex;
-	flex-wrap: wrap;}
-.menu {flex: 1 0 30%;}
-.clanek {flex: 1 0 70%;}
-.reklama {flex: 1 1 100%;}
-	
+  .obsah {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu {
+    flex: 1 0 30%;
+  }
+  .clanek {
+    flex: 1 0 70%;
+  }
+  .reklama {
+    flex: 1 1 100%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-	.obsah{display: flex;
-	flex-wrap: wrap;}
-.menu {flex: 1 0 20%;}
-.clanek {flex: 1 0 60%;}
-.reklama {flex: 1 1 20%;}
-	
+  .obsah {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu {
+    flex: 1 0 20%;
+  }
+  .clanek {
+    flex: 1 0 60%;
+  }
+  .reklama {
+    flex: 1 1 20%;
+  }
 }
