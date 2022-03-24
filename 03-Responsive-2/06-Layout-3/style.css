@@ -33,3 +33,22 @@ header > :last-child, footer > :last-child, article > :last-child, nav > :last-c
 	- 1000px
 */
 
+.reklama1 {margin-bottom: 20px;}
+
+@media screen and (min-width:640px) {
+	.obsah {display: flex;}
+	.clanek { flex: 1 1 60px;}
+	.reklama {flex: 1 1 40px}
+}
+
+@media screen and (min-width: 1000px) {
+	.obsah { display: block;}
+	.kontejner {display: flex;}
+	.menu {flex: 1 1 25%;}
+	.clanek {flex: 1 1 75%;}
+	.reklama{display: flex;}
+	.reklama1 {flex:  1 1 50%;
+	margin-bottom: 0;}
+	.reklama2 {flex:  1 1 50%;
+	margin-left: 20px;}
+}
